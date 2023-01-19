@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login validation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:80vh ;
+        }
+        #form-container{
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 50px;
+        }
+        h2{
+            margin : 0px 0px 10px 0px;
+        }
+        input{
+            width: 300px;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+        input[type="submit"]{
+            width: 300px;
+            background-color: #3498db;
+            border: 0px;
+            color: white;
+            cursor: pointer;
+        }
+        .error{
+            color: red;
+            margin: 0px;
+            text-align: left;
+        }
+        #back{
+            text-decoration: underline;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="form-container">
+        <h2>Login</h2>
+        <form action="" onsubmit="return validateForm()">
+            <input type="text" placeholder="username" id="username"><br>
+            <p id="user-error" class="error"></p>
+            <input type="password" placeholder="password" id="password"><br>
+            <p id="pass-error" class="error"></p>
+            <input type="submit">
+            <p id="back" onclick="redirect()">Back</p>
+        </form>
+    </div>
+
+    <script>
+        let userName = document.getElementById("username");
+        let passWord = document.getElementById("password");
+        let flag = 1;
+
+        function validateForm() {
+            validateUserName();
+            validatePassword();
+             
+            if(validateUserName() === true && validatePassword() === true) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        function validateUserName() {
+            if(userName.value == ""){
+                document.getElementById("user-error").innerHTML = "User Name is Empty";
+                flag = 0;
+            } else if(userName.value.length < 3) {
+                document.getElementById("user-error").innerHTML = "User Name require min 3 character";
+                flag = 0;
+            } else {
+                document.getElementById("user-error").innerHTML = "";
+                flag = 1;
+            }
+            if(flag) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        function validatePassword() {
+            if(passWord.value == ""){
+                document.getElementById("pass-error").innerHTML = "Password is Empty";
+                flag = 0;
+            } else {
+                document.getElementById("pass-error").innerHTML = "";
+                flag = 1;
+            }
+            if(flag) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        function redirect() {
+            window.location = "/index.html";
+        };
+    </script>
+    
+</body>
+</html>

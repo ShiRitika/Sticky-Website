@@ -1,0 +1,328 @@
+<!-- for sticky navbar -->
+<!-- imagve slider onclick -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- /favicon -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /google font -->
+
+    <!-- font-Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a43c2952fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- /font-Awesome -->
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- /linking css -->
+  </head>
+  <body>
+    <header>
+      <div id="top-bar" class="unique-padding">
+        <p id="tollfree">Toll Free: 12345-7890</p>
+        <div id="social-icons">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- logo part -->
+    <div id="header">
+      <img
+        src="https://www.logodesign.net/images/nature-logo.png"
+        id="logo"
+        alt=""
+      />
+    </div>
+
+    <!-- navbar part -->
+    <nav id="menu-bar">
+      <!-- mobile button  -->
+      <li id="mobile-cross"><a href="javascript: void(0)" onclick="closeMenu()"><i class="fa-sharp fa-solid fa-xmark"></i></i></a></li>
+      <!--/ mobile button  -->
+      <li onclick="redirectLogin()">Login</li>
+      <li>Home</li>
+      <li>About-us</li>
+      <li onclick="redirectCreatures()">Creatures</li>
+      <li>Client</li>
+      <li>Contact-us</li>
+    </nav>
+
+    <!-- mobile menu button start -->
+    <div id="mobile-bar" onclick="openMenu()">
+      <i class="fa-sharp fa-solid fa-bars"> Menu</i>
+    </div>
+    <!-- /mobile menu button End -->
+
+
+    <!-- poster -->
+    <div id="poster" class="unique-padding">
+      <h1>Lorem, ipsum dolor.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga animi
+        cum obcaecati in? Repellat nisi suscipit veritatis deleniti, quaerat
+        minus dolore reprehenderit laboriosam, consequatur provident minima unde
+        incidunt molestias. Sint voluptatum eius explicabo facilis.
+      </p>
+    </div>
+    <!-- /poster -->
+
+    <!-- code for image slider start -->
+    <div class="slide-container">
+      <div class="slide">
+        <img
+          src="https://cdn.pixabay.com/photo/2018/04/26/10/54/mountain-3351653__340.jpg"
+          alt=""
+        />
+        <div class="caption">Caption Text - 1</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.pixabay.com/photo/2018/02/10/15/03/snow-3143778__340.jpg"
+          alt=""
+        />
+        <div class="caption">Caption Text - 2</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.pixabay.com/photo/2018/02/13/14/00/nature-3150822__340.jpg"
+          alt=""
+        />
+        <div class="caption">Caption Text - 3</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.pixabay.com/photo/2018/04/26/10/54/mountain-3351654__340.jpg"
+          alt=""
+        />
+        <div class="caption">Caption Text - 4</div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.pixabay.com/photo/2017/09/16/16/06/sea-2755906__340.jpg"
+          alt=""
+        />
+        <div class="caption">Caption Text - 5</div>
+      </div>
+
+      <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+      <span class="arrow next" onclick="controller(1)">&#10095;</span>
+    </div>
+
+    <!-- body part About us -->
+    <div id="aboutus-section" class="unique-padding">
+      <h1>About-us</h1>
+      <div id="display-block">
+        <div class="section33">
+          <img
+            id="img1-about"
+            src="https://cdn.pixabay.com/photo/2015/12/08/18/19/clock-1083479__340.png"
+            alt=""
+          />
+          <h2>Heading 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam?Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Maiores!
+          </p>
+        </div>
+        <div class="section33">
+          <img
+            id="img2-about"
+            src="https://cdn.pixabay.com/photo/2015/08/08/21/13/gallery-880815__340.png"
+            alt=""
+          />
+          <h2>Heading 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam?Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Maiores!
+          </p>
+        </div>
+        <div class="section33">
+          <img
+            id="img3-about"
+            src="https://cdn.pixabay.com/photo/2013/04/01/09/16/folder-98462__340.png"
+            alt=""
+          />
+          <h2>Heading 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam?Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Maiores!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /body part About us -->
+
+    <!-------- contact section start --------------------->
+    <div id="contact-container" class="unique-padding">
+      <div class="section-70">
+        <h1>Lorem, ipsum.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat! Lorem
+          ipsum dolor sit amet consectetur, adipisicing elit. Vero ex facilis
+          ipsa nobis accusantium.
+        </p>
+      </div>
+      <div class="section-30">
+        <a href="" id="contact-btn">Contact-us</a>
+      </div>
+    </div>
+    <!-------- /contact section Ends --------------------->
+
+    <!-------------- blog section start ------------------>
+    <div id="aboutus-section" class="unique-padding">
+      <h1>Blogs</h1>
+      <div id="display-block">
+        <div class="section33">
+          <img
+            id="img1-blog"
+            src="https://cdn.pixabay.com/photo/2016/01/02/16/53/lion-1118467__340.jpg"
+            alt=""
+          />
+          <h2>Carnivorous Mammals</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam?Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Maiores!
+          </p>
+          <a href="">Read-More</a>
+        </div>
+        <div class="section33">
+          <img
+            id="img2-blog"
+            src="https://cdn.pixabay.com/photo/2020/01/13/19/43/lizard-4763351__340.jpg"
+            alt=""
+          />
+          <h2>Reptiles</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam?Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Maiores!
+          </p>
+          <a href="">Read-More</a>
+        </div>
+        <div class="section33">
+          <img
+            id="img3-blog"
+            src="https://cdn.pixabay.com/photo/2014/06/27/12/36/fish-378286__340.jpg"
+            alt=""
+          />
+          <h2>Aquatic Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam?Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Maiores!
+          </p>
+          <a href="">Read-More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-------------- /blog section ends ------------------->
+
+    <!------------- subscribe section start --------------->
+    <div id="subscribe-container" class="unique-padding">
+      <div class="section-50">
+        <h2>Subscribe to our Newsletter</h2>
+      </div>
+      <div class="section-50">
+        <form action="">
+          <input type="text" placeholder="Enter Email address">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!------------ /subscribe section End ----------------->
+
+    <!-- footer start -->
+    <footer>
+      <div id="imp-link" class="unique-padding">
+        <div class="div33">
+          <h3>About-Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sit
+            distinctio, impedit eveniet cum repellat veniam, sequi itaque
+            tempore dolorem perferendis numquam voluptatum eum tenetur
+            doloremque reiciendis dolores facilis culpa. Explicabo nam alias
+            quae ullam omnis iure molestiae eius dicta sapiente mollitia
+            recusandae maxime non aliquid placeat quibusdam facilis neque
+            laboriosam voluptate, cum ex! Labore aspernatur quasi error nulla
+            tenetur!.
+          </p>
+        </div>
+        <div class="div33" id="footer-menu-container">
+          <h3>Important Links</h3>
+          <ul id="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About-Us</a></li>
+            <li><a href="">Teams</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact-us</a></li>
+            <li><a href="creatures.html">Creatures</a></li>
+          </ul>
+        </div>
+        <div class="div33">
+          <h3>Contact-us</h3>
+          <p>
+            New Ashok Nagar, Block D, <br />
+            Near Ashok Nagar metro station , piller: 56<br />
+            New Delhi - 733398
+          </p>
+        </div>
+      </div>
+      <div id="copy-right">
+        <p>Copyright &copy; NaturesWebsite 2022-23</p>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
