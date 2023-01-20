@@ -71,5 +71,8 @@ Login
 ### Mobile Responsive
 ![Responsive](ReadmeImages/mobileResponsive.png)
 
+## Project Deployed
+https://sticky-website-881a6.web.app
+
 
 
